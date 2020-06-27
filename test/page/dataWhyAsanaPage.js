@@ -5,6 +5,5 @@ const whyAsanaSubmenuLinksText = ['Asana Overview', 'App Integrations', 'Custome
 const whyAsanaArrowLinks = ['See all features\n' +
 '              ' , 'Compare all plans\n' +
 '              '];
-const titleHomePage = 'Manage your team’s work, projects, & tasks online · Asana';
 
-export {titleHomePage, menuElements, whyAsanaSubmenuLinksText, whyAsanaArrowLinks}
+export {menuElements, whyAsanaSubmenuLinksText, whyAsanaArrowLinks}

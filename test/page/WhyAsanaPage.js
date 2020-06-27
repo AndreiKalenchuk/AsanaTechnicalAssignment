@@ -1,14 +1,7 @@
 import Page from "./Page";
 import ModalComponent from "./components/homeModal.compoments";
 
-class HomePage extends Page {
-    open(path) {
-        super.open('home');
-    }
-
-    get menuLinksList() {
-        return $$('button[role="menuitem"]');
-    }
+class WhyAsanaPage extends Page {
 
      get whyAsanaSubmenuLinks() {
         return $$('#navigation__dropdown-why-asana .navigation__dropdown__card-description');
@@ -18,7 +11,7 @@ class HomePage extends Page {
         return $$('#navigation__dropdown-why-asana .navigation__dropdown__card__arrow');
     }
 
-    get pageModals() {
+    get subMEnuLinksComponents() {
         return this.whyAsanaSubmenuLinks.map((modal) => new ModalComponent(modal));
     }
 
@@ -26,4 +19,4 @@ class HomePage extends Page {
         return $$('#navigation__dropdown-why-asana .navigation__dropdown__card-summary');
     }
 }
-export default new HomePage();
+export default new WhyAsanaPage();
