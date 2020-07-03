@@ -1,6 +1,8 @@
 import Page from "./Page";
+
 const titleHomePage = 'Manage your team’s work, projects, & tasks online · Asana';
 const headerHomePage = 'Keep your team coordinated, wherever you are';
+
 class HomePage extends Page {
 
     openVerifyTitle(path) {
@@ -15,7 +17,6 @@ class HomePage extends Page {
     get menuLinksList() {
         return $$('button[role="menuitem"]');
     }
-
 }
 export default new HomePage();
 export {titleHomePage, headerHomePage};
